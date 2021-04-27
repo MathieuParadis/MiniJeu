@@ -74,21 +74,6 @@ class Game
     
   end
 
-
-
-#   case choice
-#   when "a" then @human_player.search_weapon
-#   when "s" then @human_player.search_health_pack
-#   when "0".."#{@enemies_in_sight.length - 1}" then @human_player.attack(@enemies_in_sight[choice.to_i])
-#   else 
-#     print "\n"
-#     puts "mauvaise commande"
-#     puts "Tu perds un tour" 
-#     print "\n"
-# end
-# end
-
-
   def enemies_attack
     #check if any enemie has lifepoints to 0, and remove it if it is the case
     if @enemies_in_sight.any? { |player| player.life_points == 0 } 
